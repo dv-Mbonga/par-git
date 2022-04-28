@@ -8,7 +8,7 @@ public class Par {
 	
 		Scanner sc = new Scanner(System.in);
 		
-		int num, fat = 1;
+		int num, fat = 1, sum = 0;
 		
 		System.out.println("Insira um numero: ");
 		
@@ -24,10 +24,11 @@ public class Par {
 		//Fatorial
 		for(int i = 1; i <= num; i++) {
 			fat *= i;
+			sum += fat;
 		}
 		
 		System.out.println("Fatorial = " + fat);
-		
+		System.out.println("Sum Fat = " + sum);
 		sc.close();
 	}
 
