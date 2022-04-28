@@ -8,7 +8,7 @@ public class Par {
 	
 		Scanner sc = new Scanner(System.in);
 		
-		int num;
+		int num, fat = 1;
 		
 		System.out.println("Insira um numero: ");
 		
@@ -21,6 +21,13 @@ public class Par {
 			System.out.println(num + " é impar");
 		}
 			
+		//Fatorial
+		for(int i = 1; i <= num; i++) {
+			fat *= i;
+		}
+		
+		System.out.println("Fatorial = " + fat);
+		
 		sc.close();
 	}
 
